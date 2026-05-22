@@ -8,7 +8,7 @@ from transformers import T5ForConditionalGeneration, T5Tokenizer
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rag.retriever import retrieve_chunks  # type: ignore[import]
 
-MODEL_NAME = "google/flan-t5-base"
+MODEL_NAME = "google/flan-t5-small"
 
 print("⏳ Loading flan-t5-base model...")
 _tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
