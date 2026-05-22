@@ -445,7 +445,7 @@ html, body, .stApp {
 
 # ── BACKEND CHECK ─────────────────────────────────────────────────────────────
 try:
-    ping = requests.get(f"{API_URL}/health", timeout=2)
+    ping = requests.get(f"{API_URL}/health", timeout=5)
     backend_ok = ping.status_code == 200
     status_html = '<span class="dot-live"></span> System online'
 except Exception:
