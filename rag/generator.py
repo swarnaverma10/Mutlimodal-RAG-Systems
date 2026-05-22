@@ -10,11 +10,11 @@ from rag.retriever import retrieve_chunks  # type: ignore[import]
 
 MODEL_NAME = "google/flan-t5-small"
 
-print("⏳ Loading flan-t5-base model...")
+print("⏳ Loading flan-t5-small model...")
 _tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
 _model: T5ForConditionalGeneration = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)  # type: ignore[assignment]
 _model.eval()
-print("✅ flan-t5-base loaded!\n")
+print("✅ flan-t5-small loaded!\n")
 
 
 def generate_answer(query: str, top_k: int = 3) -> dict:
