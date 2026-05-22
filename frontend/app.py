@@ -4,7 +4,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://mutlimodal-rag-systems.onrender.com"
 
 IMAGE_MAP = {
     "Furnace Transformers":      "https://webcms.transformerindia.com/uploads/Changodar_01_4dc5abf9d5.jpg",
