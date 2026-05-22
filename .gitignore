@@ -1,0 +1,48 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment Variables — NEVER commit this
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# FAISS index and vector store (large binary files)
+data/vector_store/faiss_index
+data/vector_store/metadata.json
+
+# Raw scraped data
+data/raw/
+
+# Downloaded images
+images/
+
+# HuggingFace model cache
+.cache/
+*.bin
+*.safetensors
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
