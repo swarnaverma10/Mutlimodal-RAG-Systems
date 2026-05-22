@@ -6,8 +6,7 @@ Run: py -m uvicorn backend.main:app --port 8000
 import os
 import sys
 
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"]  = "1"
+# Models will download from HuggingFace on first run
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
